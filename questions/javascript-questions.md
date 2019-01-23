@@ -1243,6 +1243,56 @@ Static class members (properties/methods) are not tied to a specific instance of
 
 [[↑] Back to top](#js-questions)
 
+___
+
+### What are some downsides to using an ORM library like Sequelize for database interactions?   
+
+Raw SQL is generally faster, ORM layers have limitations that make writing and running complex queries difficult, an ORM introduces one more potential failure point.
+___
+
+###  What is the difference between Mocha and Chai?    
+
+Mocha is a JavaScript testing framework, and Chai is the assertion library. 
+
+___
+
+### How have you used React, and can you explain the difference between state and props?    
+
+state of one component will often become the props of a child component. Props are passed to the child within the render method of the parent 
+
+
+For parent-child communication, simply pass props.
+
+Use state to store the data your current page needs in your controller-view.
+
+Use props to pass data & event handlers down to your child components. 
+___
+
+### System Design
+
+
+Instead of using SQL, which is stored in the disk, you can use Redis, which is "in-memory" similar to RAM and saved as a key-value store (giant hash map that allows connection from multiple applications).
+
+___
+
+### Template
+
+Destructuring is an expression available in ES6 which enables a succinct and convenient way to extract values of Objects or Arrays and place them into distinct variables.
+
+**Array destructuring**
+
+```js
+// Variable assignment.
+const foo = ['one', 'two', 'three'];
+
+const [one, two, three] = foo;
+console.log(one); // "one"
+console.log(two); // "two"
+console.log(three); // "three"
+```
+[[↑] Back to top](#js-questions)
+
+
 ### Other Answers
 
 * http://flowerszhong.github.io/2013/11/20/javascript-questions.html
